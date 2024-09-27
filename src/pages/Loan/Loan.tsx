@@ -13,7 +13,7 @@ const LoanPage = () => {
   const [isCompleted, setIsCompleted] = useState(false);
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
   const [activeStep, setActiveStep] = useState<number>(0);
-  const [loanStatus, setLoanStatus] = useState<string | null>(null); // Add state for loan status
+  const [loanStatus, setLoanStatus] = useState<string | null>(null); 
 
   const handleSubmitRegistration = async (data: LoanInputServer) => {
     try {
