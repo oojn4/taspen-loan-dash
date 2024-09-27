@@ -1,0 +1,49 @@
+.title {
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+  font-size: rem(26px);
+  font-weight: 900;
+  font-family:
+    Greycliff CF,
+    var(--mantine-font-family);
+}
+.subTitle {
+  font-size: rem(20px);
+  font-weight: 900;
+  font-family:
+    Greycliff CF,
+    var(--mantine-font-family);
+}
+.headerForm{
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+}
+.controls {
+  @media (max-width: --mantine-breakpoint-xs) {
+    flex-direction: row;
+  }
+}
+
+.control {
+  @media (max-width: --mantine-breakpoint-xs) {
+    width: 100%;
+    text-align: center;
+  }
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formContainer > div {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+/* In FormUser.module.css or your stylesheet */
+.flexColumnStart {
+  align-items: flex-start;
+}
