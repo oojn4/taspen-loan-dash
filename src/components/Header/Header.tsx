@@ -8,16 +8,13 @@ import {
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { useTranslation } from 'react-i18next';
-import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { RootState } from '../../store/store';
 import LocaleToggle from '../LocaleToggle/LocaleToggle';
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
 import classes from './Header.module.css';
 
 export default function HeaderComponent() {
-  const user = useSelector((state: RootState) => state.auth.user);
-  const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
+  const [drawerOpened, { close: closeDrawer }] = useDisclosure(false);
   // const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false);
   const { t } = useTranslation();
   const navigate = useNavigate();

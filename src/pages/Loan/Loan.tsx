@@ -5,7 +5,7 @@ import LoanInformation from '../../components/LoanInformation/LoanInformation';
 import ResetButton from '../../components/RegisterButton/ResetButton';
 import SubmitButton from '../../components/RegisterButton/SubmitButton';
 import defaultDataLoan from '../../data/defaultDataLoan';
-import { LoanService } from '../../lib/services/LOAN.service';
+import { LoanService } from '../../lib/services/loan.service';
 import { showErrorFetching } from '../../utils/errorFetching';
 
 const LoanPage = () => {

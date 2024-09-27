@@ -9,11 +9,6 @@ export const PUBLICROUTES: Routes = [
     path: '/',
     element: lazy(() => import('../pages/Home/Home')),
   },  {
-    key: 'register',
-    name: 'Register',
-    path: '/register',
-    element: lazy(() => import('../pages/Register/Register')),
-  },  {
     key: 'loan',
     name: 'Loan',
     path: '/loan',
