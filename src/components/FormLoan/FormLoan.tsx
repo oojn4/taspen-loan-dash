@@ -1,14 +1,14 @@
 import {
-    Button,
-    Container,
-    Grid,
-    GridCol,
-    Group,
-    Paper,
-    Select,
-    Stepper,
-    TextInput,
-    Title
+  Button,
+  Container,
+  Grid,
+  GridCol,
+  Group,
+  Paper,
+  Select,
+  Stepper,
+  TextInput,
+  Title
 } from '@mantine/core';
 import { useEffect } from 'react';
 import { showErrorNotification } from '../../utils/notifications';
@@ -210,6 +210,7 @@ import classes from './FormLoan.module.css';
                     required
                     error={errors.PA_Perkotaan}
                     allowDeselect={false}
+                    defaultValue={''}
                     />
                 <Select
                     label="Lokasi Properti di Pinggiran Kota"
@@ -222,6 +223,7 @@ import classes from './FormLoan.module.css';
                     required
                     error={errors.PA_Pinggiran_Kota}
                     allowDeselect={false}
+                    defaultValue={''}
                     />
                   </GridCol>
                   </Grid>
